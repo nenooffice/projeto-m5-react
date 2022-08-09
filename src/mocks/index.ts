@@ -135,6 +135,27 @@ export const mockedProducts: I.Product[] = [
   } 
 ];
 
+export const mockedCategories: I.Category[] = [
+  {
+    id: "416ceda3-09b2-4e6e-abfb-7cda40601326",
+    name: "Burgers",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    id: "8a181975-0cf9-4b8e-8606-c0e3bf56e414",
+    name: "Portions",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    id: "ca9c096c-b81b-4e12-8dd7-94154792d349",
+    name: "Drinks",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+];
+
 export const mockedTables: I.Table[] = [
   {
     id: "6c377780-bb00-4248-9a8a-a1fcdc33ec60",
