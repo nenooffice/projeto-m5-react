@@ -134,4 +134,11 @@ export interface LoginProps {
   setLogged: Dispatch<SetStateAction<boolean>>;
 }
 
+export interface SettingsProps {
+  setLogged: Dispatch<SetStateAction<boolean>>;
+}
+
+export interface ActiveButtonProps {
+  active?: boolean;
+}
 
