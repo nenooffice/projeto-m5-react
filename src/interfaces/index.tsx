@@ -47,6 +47,13 @@ export interface Favorite {
   favoritedAt?: Date;
 }
 
+export interface Order {
+  id?: string;
+  tableNumber: number;
+  userId: string;
+  createdAt?: Date;
+}
+
 export interface OrderToProduct {
   id?: string;
   productId: string;
@@ -54,6 +61,8 @@ export interface OrderToProduct {
   quantity: number;
   createdAt?: Date;
 }
+
+
 
 /*
  ? Style Interfaces
