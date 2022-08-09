@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, Dispatch, InputHTMLAttributes, SetStateAction } from "react";
-import { Theme } from "./styled-components";
+import { Theme } from "../interfaces/styled-components";
 
 
 /*
