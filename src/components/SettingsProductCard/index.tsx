@@ -10,7 +10,7 @@ const SettingsProductCard = ({ product }: SettingsProductCardProps) => {
       <h3>{product.name}</h3>
       <p>R${product.price}</p>
       <Styled.SettingsProductCardButton>
-        <EditIcon /> Editar prato
+        <EditIcon /> Edit Product
       </Styled.SettingsProductCardButton>
     </Styled.SettingsProductCardContainer>
   );

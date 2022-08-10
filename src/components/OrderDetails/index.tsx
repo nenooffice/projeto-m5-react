@@ -8,11 +8,11 @@ const OrderDetails = () => {
   return (
     <Styled.OrderDetailsContainer>
       <Styled.OrderDetailsHeader>
-        <h2>Pedido #02</h2>
+        <h2>Order #07</h2>
         <div>
-          <Button text="Comer no local" onClick={() => {}} size="small" />
+          <Button text="Stay on site" onClick={() => {}} size="small" />
           <Button
-            text="P/ Viagem"
+            text="Roadtrip"
             onClick={() => {}}
             size="small"
             variant="disable"
@@ -29,27 +29,27 @@ const OrderDetails = () => {
         <Styled.CheckoutDetailsHeader>
           <div>
             <h3>Item</h3>
-            <h3>Qtd</h3>
+            <h3>Quantity</h3>
           </div>
-          <h3>Preço</h3>
+          <h3>Price</h3>
         </Styled.CheckoutDetailsHeader>
         <Styled.CheckoutCardsContainer>
-          <CheckoutCard product={mockedProducts[0]} />
-          <CheckoutCard product={mockedProducts[1]} />
+          <CheckoutCard product={mockedProducts[4]} />
+          <CheckoutCard product={mockedProducts[8]} />
         </Styled.CheckoutCardsContainer>
       </Styled.CheckoutDetailsContainer>
       <Styled.OrderDetailsFooter>
         <div>
-          <p>Desconto</p>
-          <h3>R$0.00</h3>
+          <p>Discount</p>
+          <h3>$0.00</h3>
         </div>
         <div>
           <p>Sub total</p>
           <h3>R$0.00</h3>
         </div>
         <Button
-          text="Continue para o pagamento"
-          onClick={() => toast.error("Sessão em desenvolvimento!")}
+          text="Payment"
+          onClick={() => toast.error("On dev!")}
           size="x-large"
         />
       </Styled.OrderDetailsFooter>
