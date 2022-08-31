@@ -1,15 +1,23 @@
-import { ProductsListProps } from "../../interfaces";
+import { Product, ProductsListProps } from "../../interfaces";
 import ProductCard from "../ProductCard";
 import * as Styled from "./styles";
 
-const ProductsList = ({ list }: ProductsListProps) => {
+const ProductsList = ({
+  list,
+  isFavoritesList,
+  handleGetFavorites,
+}: ProductsListProps) => {
   return (
     <Styled.ProductsListContainer>
-      {list.map((element) => (
-        <ProductCard product={element} key={element.id} />
+      {list.map((element: Product) => (
+        <ProductCard
+          isFavoritesList={isFavoritesList}
+          handleGetFavorites={handleGetFavorites}
+          product={element}
+          key={element.id}
+          />
       ))}
     </Styled.ProductsListContainer>
-  );
-};
-
+  )
+}
 export default ProductsList;

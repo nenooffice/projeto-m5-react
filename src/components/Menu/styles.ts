@@ -2,16 +2,16 @@ import styled, { css } from "styled-components";
 import { MenuItemProps, MenuItemButtonProps } from "../../interfaces";
 
 export const MenuContainer = styled.div`
-  min-width: 6.5rem;
+  min-width: 7rem;
   height: 100vh;
-  border-radius: 0 16px 16px 0;
+  border-radius: 0 15px 15px 0;
   background-color: #1f1d2b;
   display: flex;
   flex-direction: column;
   align-items: center;
   img {
-    width: 4rem;
-    margin: 1.25rem 0;
+    width: 5rem;
+    margin: 1.5rem 0;
   }
   nav {
     width: 100%;
@@ -19,7 +19,7 @@ export const MenuContainer = styled.div`
 `;
 
 export const MenuItem = styled.div<MenuItemProps>`
-  height: 80px;
+  height: 90px;
   width: calc(100% - 12px);
   margin-left: 12px;
   display: flex;

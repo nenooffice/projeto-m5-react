@@ -31,10 +31,10 @@ const CheckoutCard = ({ product }: CheckoutCardProps) => {
         <Input
           value={description}
           onChange={(a) => setDescription(a.target.value)}
-          placeholder="Detalhes do produto"
+          placeholder="Product Details"
         />
         <Styled.RemoveProductButton
-          onClick={() => toast.error("Sessão em desenvolvimento!")}
+          onClick={() => toast.error("Session under construction!")}
         >
           <TrashIcon />
         </Styled.RemoveProductButton>

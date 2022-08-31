@@ -93,7 +93,6 @@ export interface StyledInputProps {
 
 export interface MenuProps {
   path: "home" | "settings";
-  setLogged: Dispatch<SetStateAction<boolean>>;
 }
 
 export interface MenuItemProps {
@@ -116,6 +115,8 @@ export interface CardContainerProps {
 
 export interface ProductsListProps {
   list: Product[];
+  isFavoritesList: boolean;
+  handleGetFavorites: () => void;
 }
 
 export interface SettingsProductCardProps {
@@ -142,3 +143,88 @@ export interface ActiveButtonProps {
   active?: boolean;
 }
 
+/*
+ * New Interfaces
+*/
+
+export interface StyledInputProps {
+  inputSize?: "small" | "large";
+}
+
+export interface CategoryModalProps {
+  handleOpenModal: () => void;
+  category?: Category;
+  setCategory: Dispatch<SetStateAction<Category | undefined>>;
+}
+
+export interface CategoryData {
+  name: string;
+}
+
+export interface DeleteCategoryModalProps {
+  categoryId?: string;
+  handleOpenDeleteModal: () => void;
+  setCategory: Dispatch<SetStateAction<Category | undefined>>;
+}
+
+export interface DeleteProductModalProps {
+  productId?: string;
+  handleOpenDeleteModal: () => void;
+  setProduct: Dispatch<SetStateAction<Product | undefined>>;
+}
+
+export interface DeleteTableModalProps {
+  tableId?: string;
+  handleOpenDeleteModal: () => void;
+  setTable: Dispatch<SetStateAction<Table | undefined>>;
+}
+
+export interface ProductCardProps {
+  product: Product;
+  isFavoritesList: boolean;
+  handleGetFavorites: () => void;
+}
+
+export interface ProductModalProsp {
+  handleOpenModal: () => void;
+  product?: Product;
+  setProduct: Dispatch<SetStateAction<Product | undefined>>;
+}
+
+export interface NewProductData {
+  name?: string;
+  description?: string;
+  price?: number;
+  image?: string;
+  categoryId?: string;
+}
+
+export interface ActiveButtonProps {
+  active?: boolean;
+}
+
+export interface SettingsMenuProps {
+  path: "users" | "tables" | "categories" | "products";
+}
+
+export interface TableModalProps {
+  handleOpenModal: () => void;
+  table?: Table;
+  setTable: Dispatch<SetStateAction<Table | undefined>>;
+}
+
+export interface TableData {
+  number: number;
+}
+
+export interface SettingsProductCardProps {
+  product: Product;
+  handleOpenModal: () => void;
+  handleOpenDeleteModal: () => void;
+  setProduct: Dispatch<SetStateAction<Product | undefined>>;
+}
+
+export interface LoginData {
+  email: string;
+  password: string;
+}
